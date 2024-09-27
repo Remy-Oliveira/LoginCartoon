@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="formLogin">
+            <h1 class="spaceFonk">Space Fonk</h1>
+            <div class="inputBox" style="--1:3">
+                <input type="text" required>
+                <label>USERNAME</label>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="inputBox" style="--1:5;">
+                <input type="password" required>
+                <label>PASSWORD</label>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="rememberForgot">
+                <label> <input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <input type="submit" value="Login" class="btn">
+            <div class="registerLink">
+                <p>Dont't have an account? <a href="#" onclick="toggleForm()">Register!</a></p>
+            </div>
+        </form>
+        <form class="formRegister">
+            <h1 class="spaceFonk">Space Fonk</h1>
+            <div class="inputBox" style="--i:1;">
+                <input type="text" required>
+                <label>USERNAME</label>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="inputBox" style="--i:2;">
+                <input type="text" required>
+                <label>EMAIL</label>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="inputBox" style="--i:3;">
+                <input type="password" required>
+                <label>PASSWORD</label>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="rememberForgot">
+                <label> <input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <input type="submit" value="Register" class="btn">
+            <div class="registerLink">
+                <p>Already have an account? <a href="#" onclick="toggleLogin()">Login!</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
